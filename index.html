@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Tackle Physics</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Football Tackle Physics</h1>
+    <div id="canvas-container"></div>
+    <div id="controls">
+        <div>
+            <label for="runner-angle">Runner Angle</label>
+            <input type="range" id="runner-angle" min="0" max="360" value="90">
+            <span id="runner-angle-value">90</span>
+        </div>
+        <div>
+            <label for="tackler-angle">Tackler Angle</label>
+            <input type="range" id="tackler-angle" min="0" max="360" value="270">
+            <span id="tackler-angle-value">270</span>
+        </div>
+        <div>
+            <label for="runner-mass">Runner Mass</label>
+            <input type="range" id="runner-mass" min="5" max="20" value="10">
+            <span id="runner-mass-value">10</span>
+        </div>
+        <div>
+            <label for="tackler-mass">Tackler Mass</label>
+            <input type="range" id="tackler-mass" min="5" max="20" value="10">
+            <span id="tackler-mass-value">10</span>
+        </div>
+        <button id="start-button">Start Simulation</button>
+        <button id="reset-button">Reset</button>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
